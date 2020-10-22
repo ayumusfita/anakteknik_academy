@@ -12,7 +12,7 @@ Feature: Rest API Testing
     And response should have "$..data[*].description"
 
   @create-users
-  Scenario: GET products
+  Scenario: Create Users
     Given user login to hit the API
     When user sends a POST request to "/users" with body:
     """
